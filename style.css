@@ -1,0 +1,506 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho */
+#header {
+  background-color: #52188a;
+  padding: 10px 0;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo em telas menores */
+}
+
+#logo {
+  height: 50px;
+  width: auto;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo em telas menores */
+}
+
+#nav-bar ul li {
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #d4a5f0;
+}
+
+/* Seção Principal (Hero) */
+#main {
+  height: 100vh; /* Ajustado para ocupar toda a altura da viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px; /* Ajustado para espaçamento interno */
+  background: url('13077.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+#main .content {
+  background: rgba(0, 0, 0, 0.5); /* Sobreposição escura para melhorar a legibilidade do texto */
+  padding: 5% 3%; /* Usando porcentagem para responsividade */
+  border-radius: 20px; /* Raio reduzido para bordas arredondadas */
+  width: 90%; /* Ajustado para um valor mais responsivo */
+  /* Define uma largura máxima para evitar que o conteúdo fique muito largo */
+}
+
+#main h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#main p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  text-decoration: none;
+  background-color: #52188a;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #d4a5f0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column; /* Alinha os itens verticalmente em telas menores */
+  }
+
+  #nav-bar ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  #nav-bar ul li {
+    margin: 10px 0; /* Ajusta o espaçamento entre os itens do menu */
+  }
+
+  #main .content {
+    padding: 10% 5%;
+    border-radius: 10px; /* Ajusta o raio das bordas para dispositivos menores */
+  }
+
+  #main h1 {
+    font-size: 2em; /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  #main p {
+    font-size: 1em; /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  .btn-primary {
+    padding: 10px 20px; /* Ajusta o padding do botão para telas menores */
+    font-size: 1em; /* Reduz o tamanho da fonte do botão */
+  }
+}
+
+@media (max-width: 480px) {
+  #main h1 {
+    font-size: 1.5em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+  }
+
+  #main p {
+    font-size: 0.9em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+  }
+
+  .btn-primary {
+    padding: 8px 16px; /* Ajusta o padding do botão para telas muito pequenas */
+    font-size: 0.9em; /* Reduz ainda mais o tamanho da fonte do botão */
+  }
+}
+
+#ele {
+  width: 15vw;
+}
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho */
+#header {
+  background-color: #52188a;
+  padding: 10px 0;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo em telas menores */
+}
+
+#logo {
+  height: 50px;
+  width: auto;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo em telas menores */
+}
+
+#nav-bar ul li {
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #d4a5f0;
+}
+
+
+
+.btn-primary {
+  text-decoration: none;
+  background-color: #52188a;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #d4a5f0;
+}
+
+/* Funcionalidades */
+/* Funcionalidades */
+#features {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+#features h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o título */
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column; /* Organiza as funcionalidades verticalmente por padrão */
+  align-items: center; /* Centraliza as funcionalidades horizontalmente */
+}
+
+.feature {
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centraliza o texto dentro das funcionalidades */
+}
+
+.feature i {
+  color: #52188a;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .features-container {
+    flex-direction: row; /* Alinha as funcionalidades horizontalmente em telas maiores */
+    justify-content: center; /* Centraliza as funcionalidades horizontalmente */
+    flex-wrap: wrap; /* Permite que as funcionalidades se movam para a linha seguinte se necessário */
+  }
+}
+
+
+/* Como Funciona */
+#how-it-works {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#how-it-works h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#how-it-works p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#how-it-works iframe {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+
+/* Planos e Preços */
+#pricing {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+#pricing h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo em telas menores */
+}
+
+.pricing-box {
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Permite que as caixas de preço se ajustem para preencher o espaço disponível */
+}
+
+.pricing-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.pricing-box h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.pricing-box p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  background-color: #52188a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #d4a5f0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column; /* Alinha os itens verticalmente em telas menores */
+    align-items: center; /* Centraliza os itens horizontalmente */
+  }
+}
+
+/* Formulário de Captura de Leads */
+#trial {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#trial h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#trial form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#trial input[type="text"],
+#trial input[type="email"],
+#trial input[type="submit"] {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#trial input[type="submit"] {
+  background-color: #52188a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#trial input[type="submit"]:hover {
+  background-color: #d4a5f0;
+}
+
+/* Contato */
+#contact {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+#main-footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #52188a;
+  color: white;
+}
+
+#main-footer p {
+  margin: 0;
+}
+
+#main-footer a {
+  color: #d4a5f0;
+  text-decoration: none;
+}
+
+#main-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column; /* Alinha os itens verticalmente em telas menores */
+  }
+
+  #nav-bar ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  #nav-bar ul li {
+    margin: 10px 0; /* Ajusta o espaçamento entre os itens do menu */
+  }
+
+  #main .content {
+    padding: 10% 5%;
+    border-radius: 10px; /* Ajusta o raio das bordas para dispositivos menores */
+  }
+
+  #main h1 {
+    font-size: 2em; /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  #main p {
+    font-size: 1em; /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px; /* Ajusta o padding do botão para telas menores */
+    font-size: 1em; /* Reduz o tamanho da fonte do botão */
+  }
+
+  .feature,
+  .pricing-box {
+    max-width: 90%;
+    margin: 20px auto; /* Ajusta o espaçamento em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  #main h1 {
+    font-size: 1.5em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+  }
+
+  #main p {
+    font-size: 0.9em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 8px 16px; /* Ajusta o padding do botão para telas muito pequenas */
+    font-size: 0.9em; /* Reduz ainda mais o tamanho da fonte do botão */
+  }
+
+  .feature,
+  .pricing-box {
+    max-width: 100%;
+    padding: 10px; /* Ajusta o padding para telas muito pequenas */
+  }
+}
